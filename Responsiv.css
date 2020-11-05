@@ -1,0 +1,498 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+
+.topnav{
+    position: relative;
+    background-color: #363636;
+    width: 100%;
+    font-family: Arial;
+}
+
+.nav {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+    background-color: #333;
+}
+
+.nav .overskrift{
+    float: left;
+    cursor: pointer;
+    margin: 4px;
+    font-size: 20px;
+    color: #dddddd;
+
+}
+
+.nav .overskrift:hover{
+    text-decoration: none;
+}
+
+
+.bilde{
+    position: relative;
+
+}
+
+
+.nav .bar{
+
+    float: right;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+
+    transition: all ease-in-out 250ms;
+
+
+}
+
+
+.nav .bar::after{
+
+    content: '';
+    position: relative;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: orange;
+    border-radius: 8px;
+    transition: all ease-in-out 250ms;
+}
+
+.nav .bar:hover::after{
+
+    width: 100%;
+    transition: 0.4s;
+
+}
+
+.nav .bar:hover{
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+
+.bilde{
+
+    background-size: cover;
+    width: 100%;
+
+}
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.text h1{
+    text-decoration: underline;
+    padding: 30px 30px 20px;
+    font-family: Arial;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+
+}
+
+.text p{
+
+    padding: 0px 30px 20px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+}
+
+.membership{
+    margin-top: 100px;
+    width: 100%;
+
+}
+.membership h1{
+
+    padding: 30px 30px 20px;
+    font-family: Arial;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+    text-align: center;
+
+}
+
+.service{
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+.button:hover{
+    text-decoration: none;
+}
+
+.kilde{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.linje{
+    width: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    padding: 3px;
+}
+
+.tittel{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.media{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    color: darkorange;
+}
+
+.white{
+    color: white;
+    font-size: 10px;
+   text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+
+
+}
+
+.white:hover{
+    color: #1abc9c;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.facebook{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    transition: 0.5s;
+
+}
+
+.facebook:hover{
+
+    cursor: pointer;
+    border-radius: 200px;
+    background-color: blue;
+
+}
+
+.twitter{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    transition: 0.5s;
+
+}
+
+.twitter:hover{
+
+    cursor: pointer;
+    border-radius: 200px;
+    background-color: lightskyblue;
+
+}
+
+
+.Insta{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    transition: 0.5s;
+
+}
+
+.Insta:hover{
+    cursor: pointer;
+    border-radius: 200px;
+    background-color: purple;
+
+}
+
+.copyright{
+
+    font-size: 10px;
+    color: #dddddd;
+    float: right;
+}
+
+@media (min-width: 425px){
+
+    .nav .bar{
+
+        float: right;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        font-size: 12px;
+        text-align: center;
+
+        transition: all ease-in-out 250ms;
+
+    }
+
+
+}
+
+
+
+
+@media (min-width: 768px){
+
+
+    .nav .bar{
+
+        float: right;
+        color: white;
+        padding: 15px 15px 15px 15px;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+
+        transition: all ease-in-out 250ms;
+
+    }
+
+    .nav .overskrift{
+        float: left;
+        cursor: pointer;
+        padding-top: 7px;
+        margin: 4px;
+        font-size: 20px;
+        color: #dddddd;
+
+    }
+
+
+
+    .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+
+
+    .tittel{
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .white{
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+
+
+    }
+
+    .white:hover{
+        color: #1abc9c;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .nav .bar{
+
+        float: right;
+        color: white;
+        padding: 20px 20px 20px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+
+        transition: all ease-in-out 250ms;
+
+    }
+
+    .nav .overskrift{
+        float: left;
+        cursor: pointer;
+        padding-top: 7px;
+        margin: 4px;
+        font-size: 30px;
+        color: #dddddd;
+
+    }
+
+
+    .copyright{
+
+        font-size: 15px;
+    }
+
+    .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+
+
+    .tittel{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .white{
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+
+
+    }
+
+    .white:hover{
+        color: #1abc9c;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+
+
+}
